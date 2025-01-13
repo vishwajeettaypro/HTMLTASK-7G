@@ -1,54 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form with reCAPTCHA</title>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="task3.css">
+    <link rel="icon" type="image/x-icon" href="icon.jpeg ">
+
 </head>
+
 <body>
-    <h1>Contact Us</h1>
-    <form id="contactForm" action="cap.php" method="POST">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" required></textarea><br><br>
+    <div class="card-conatiner">
+        <div class="card">
+            <img src="image1.jpeg" alt="not found">
+            <div class="card-content">
+                <h1>card-1</h1>
+                <p> Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates ratione magni aspernatur non
+                    dolores molestiae dolorem veniam, impedit vitae commodi.</p>
+                    <a href="" class="under" >Learn More</a>
+            </div>
+        </div>
+         <div class="card">
+            <img src="image1.jpeg" alt="">
+            <div class="card-content">
+                <h1>card-1</h1>
+                <p> Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates ratione magni aspernatur non
+                    dolores molestiae dolorem veniam, impedit vitae commodi.</p>
+                    <a href="" class="under" >Learn More</a>
+            </div>
+        </div>
+            <div class="card">
+                <img src="iamge2.jpeg" alt="">
+                <div class="card-content">
+                    <h1>card-2</h1>
+                    <p> Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates ratione magni aspernatur non
+                        dolores molestiae dolorem veniam, impedit vitae commodi.</p>
+                        <a href="" class="under" >Learn More</a>
+                    </div>
+            </div>
+              
+            <div class="card">
+                <img src="image1.jpeg" alt="">
+                <div class="card-content">
+                    <h1>card-1</h1>
+                    <p> Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates ratione magni aspernatur non
+                        dolores molestiae dolorem veniam, impedit vitae commodi.</p>
+                        <a href="" class="under" >Learn More</a>
+                    </div>
+            </div>
+            <div class="card">
+                <img src="image1.jpeg" alt="">
+                <div class="card-content">
+                    <h1>card-1</h1>
+                    <p> Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates ratione magni aspernatur non
+                        dolores molestiae dolorem veniam, impedit vitae commodi.</p>
+                        <a href="" class="under" >Learn More</a>
+                    </div>
+            </div>
+            <div class="card">
+                <img src="image1.jpeg" alt="">
+                <div class="card-content">
+                    <h1>card-1</h1>
+                    <p> Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates ratione magni aspernatur non
+                        dolores molestiae dolorem veniam, impedit vitae commodi.</p>
+                        <a href="" class="under" >Learn More</a>
+                    </div>
+            </div>
+        </div>
 
         
-        <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div><br>
-
-        <button type="submit">Submit</button>
-    </form>
-    <script>
-
-
-
-    
-        const  dname = "admin";
-        const  dpassword = "12345";
-        
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-              event.preventDefault(); // Prevent form submission
-              const name  = document.getElementById('name').value;
-              const  password = document.getElementById('password').value;
-             const errorMessage = document.getElementById('errorMessage');
-             const successMessage = document.getElementById('successMessage');
-  
-              // Validate credentials
-              if (name === dname && password === dpassword) {
-                  successMessage.textContent = "login success"; // Clear error message
-                  alert("Login successful! Redirecting to homepage...");
-                 setTimeout(() => {
-                  window.location.href = "profile6.html"; // Redirect to homepage
-                 }, 3000);
-              } else {
-                  errorMessage.textContent = "Invalid username or password!";
-              }
-          });
-     </script>
+    </div>
 </body>
+
 </html>
